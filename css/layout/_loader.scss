@@ -1,0 +1,38 @@
+.loader {
+  //to hide the loader for easier coding remove display none afterwards
+
+  background: radial-gradient(circle at 80% 80%, #424242 30%, #000000 30%);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  bottom: 0 rem;
+  top: 0 rem;
+  z-index: 20;
+  text-align: center;
+  padding: 0 5vw;
+  .loader-bar {
+    position: absolute;
+    width: 60vw;
+    height: 1rem;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.699),
+      $logoColor
+    );
+    border-radius: 10px;
+    left: 20vw;
+    transform: translateY(-5rem);
+    animation-name: progressBar;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-timing-function: ease-out;
+  }
+}
+
+//loader text
+.loader-text {
+  font-size: 2rem;
+  font-family: $font;
+  color: $lightTextColor;
+  font-weight: 800;
+}

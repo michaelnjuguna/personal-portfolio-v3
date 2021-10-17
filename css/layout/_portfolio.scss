@@ -1,0 +1,112 @@
+.portfolio {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  .portfolio-container {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5rem 0;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      margin: 3rem auto;
+    }
+
+    .portfolio-items {
+      min-width: 30vw;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+
+      @media (max-width: 767px) {
+        width: 50vw;
+      }
+
+      .item-name {
+        clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+        font-family: $font;
+        font-size: 1.6rem;
+        font-weight: 500;
+        background: $logoColor;
+        padding: 1rem 2rem;
+        margin: 1rem;
+        color: $lightTextColor;
+        transition-property: all;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        transition-delay: 0.3s;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+      .item-name:hover {
+        background: $lightTextColor;
+        color: $logoColor;
+      }
+
+      .youtube {
+        background-color: rgba(255, 0, 0, 0.678);
+        border-radius: 100vw;
+        clip-path: none;
+      }
+      .codepen {
+        background-color: hsla(0, 0%, 0%, 0.884);
+        border-radius: 100vw;
+        clip-path: none;
+        a {
+          background-color: transparent;
+        }
+      }
+      .item-code {
+        clip-path: polygon(
+          25% 0%,
+          75% 0%,
+          100% 50%,
+          75% 100%,
+          25% 100%,
+          0% 50%
+        );
+        font-family: $font;
+        font-size: 1.6rem;
+        font-weight: 500;
+        background: $logoColor;
+        padding: 2rem 2rem;
+        color: $lightTextColor;
+        transition-property: all;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        transition-delay: 0.3s;
+        @media (max-width: 767px) {
+          padding: 2rem 2rem;
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
+
+          // transition-property: all;
+          // transition-duration: 0.5s;
+          // &:hover {
+          //   border-bottom: solid 3px $lightTextColor;
+          //   border-radius: $borderRadius;
+          // }
+        }
+      }
+      .item-code:hover {
+        background: $lightTextColor;
+        color: $logoColor;
+      }
+    }
+  }
+
+  .portfolio-header {
+    @include header;
+  }
+}

@@ -1,0 +1,73 @@
+body {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+
+  //custom cursor
+  .custom-cursor {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: solid 3px $logoColor;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    display: none;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim 0.5s infinite alternate;
+  }
+
+  .custom-cursor::after {
+    content: "";
+    width: 4.5rem;
+    height: 4.5rem;
+    position: absolute;
+    border: 12px solid #311b927c;
+    border-radius: 50%;
+    left: -8px;
+    top: -8px;
+    animation: cursorAnim2 0.5s infinite alternate;
+  }
+  .main {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+
+    display: none;
+    .light-part {
+      position: relative;
+      width: 100vw;
+      height: 100%;
+      padding: 0 10vw;
+      transform: translateY(-8rem);
+      background: linear-gradient(
+        30deg,
+        rgb(179, 177, 177) 70%,
+        rgb(95, 95, 95)
+      );
+      @media (min-width: 924px) {
+        padding: 0 10vw;
+      }
+    }
+  }
+}
+
+//scrollbar
+body::-webkit-scrollbar {
+  width: 1.8rem;
+  height: 0;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: $logoColor;
+  // border-radius: 100vw;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #07021f;
+  border-radius: 100vw;
+  border: 3px solid $logoColor;
+  height: 0;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #0d0c0e;
+}

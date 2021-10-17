@@ -1,0 +1,27 @@
+@mixin logo {
+  border: solid 6px $logoColor;
+  color: $logoColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font;
+}
+
+@mixin header {
+  font-family: $font;
+  color: $logoColor;
+  font-weight: 900;
+  font-size: 4rem;
+  text-align: left;
+  &::selection {
+    color: $logoColor;
+    background-color: white;
+  }
+}
+
+@mixin select {
+  &::selection {
+    color: $logoColor;
+    background-color: white;
+  }
+}

@@ -1,0 +1,19 @@
+.footer {
+  position: absolute;
+  width: 100%;
+  min-height: 20rem;
+  background: linear-gradient(rgb(179, 177, 177), rgb(95, 95, 95));
+  transform: translateY(-10rem);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: $font;
+  font-weight: 300;
+  .footer-name {
+    margin: 10% 0 0;
+  }
+  i {
+    color: red;
+  }
+}

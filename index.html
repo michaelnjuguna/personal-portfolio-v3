@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Michael Njuguna" />
+    <meta
+      name="description"
+      content="Full stack web and Mobile application developer based in Nairobi,Kenya."
+    />
+    <meta
+      name="keywords"
+      content="Michael Njuguna, Full stack,Web Developer,Mobile App Developer"
+    />
+    <title>Full-Stack web and Mobile application developer</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/img-2.png" />
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Icons-->
+    <script
+      src="https://kit.fontawesome.com/a117318df2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <section class="loader" id="loader">
+      <!-- loader logo -->
+      <div class="loader-logo">
+        <svg class="logo-border">
+          <polygon
+            x="10"
+            y="10"
+            class="logo-border__inner"
+            points="25,40 40,10 90,10 105,40  90,70 40,70 "
+          />
+        </svg>
+        <div class="logo-name">M</div>
+      </div>
+      <!-- loader progress -->
+      <div class="loader-bar"></div>
+      <div class="loader-text">Wait, Michael Is Thinking . . .</div>
+    </section>
+    <main class="main">
+      <div class="custom-cursor"></div>
+      <!-- computer navigation bar -->
+
+      <section class="lg-navbar">
+        <!-- SVG logo -->
+        <div class="lg-nav__logo">
+          <svg class="lg-nav__logo-border">
+            <polygon
+              class="lg-nav__inner"
+              points="20,35  35,5  85,5  100,35  85,65  35,65 "
+            />
+          </svg>
+          <div class="lg-nav__logo-text">M</div>
+        </div>
+        <!-- E mail and phone -->
+        <div class="lg-nav__contact">
+          <ul class="lg-nav__contact-items">
+            <li class="lg-nav__contact-item">
+              <a
+                class="lg-nav__contact-link"
+                href="mailto:michaelnjuguna184@gmail.com"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-envelope-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+                  />
+                </svg>
+                E-MAIL</a
+              >
+            </li>
+            <li class="lg-nav__contact-item">
+              <a class="lg-nav__contact-link" href="tel:+254796371360">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-telephone-outbound-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+                PHONE</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="lg-nav__links">
+          <ul class="lg-nav__links-items">
+            <li class="lg-nav__links-item">
+              <a href="https://github.com/michaelnjuguna/michaelnjuguna">
+                GITHUB</a
+              >
+            </li>
+            <li class="lg-nav__links-item">
+              <a href="https://www.linkedin.com/in/michael-njuguna-1216101b2/"
+                >LINKEDIN</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Mobile nav-->
+      <section class="sm-navbar">
+        <!--mobile navbar logo-->
+        <div class="sm-navbar__logo">
+          <svg class="sm-navbar__logo-border">
+            <polygon
+              class="sm-navbar__logo-inner"
+              points="25,35  35,10  85,10  95,35  85,55  35,55 "
+            />
+          </svg>
+          <div class="sm-navbar__text">M</div>
+        </div>
+        <!--Hambuger-->
+        <div type="button" onClick="openNav()" class="hambuger">
+          <div class="hambuger-stick hambuger-stick__one"></div>
+          <div class="hambuger-stick hambuger-stick__two"></div>
+        </div>
+      </section>
+      <!--mobile navigation-->
+      <div class="mobile-list__items">
+        <ul class="mobile-list__contact">
+          <li class="mobile-list__contact-item">
+            <a href="mailto:michaelnjuguna184@gmail.com">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+                />
+              </svg>
+              E-MAIL</a
+            >
+          </li>
+          <li class="mobile-list__contact-item">
+            <a href="tel:+254796371360"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-telephone-outbound-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+              PHONE</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-list__links">
+          <li class="mobile-list__link">
+            <a href="https://github.com/michaelnjuguna/michaelnjuguna"
+              >GITHUB</a
+            >
+          </li>
+          <li class="mobile-list__link">
+            <a href="https://www.linkedin.com/in/michael-njuguna-1216101b2/"
+              >LINKEDIN</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!--header-->
+      <header class="header">
+        <h1 class="intro-header">
+          I'm <span class="intro-name">Michael Njuguna</span>
+        </h1>
+        <h2 class="second-header">Full-Stack Web and Mobile App developer</h2>
+        <button class="cv-btn">
+          <a href="pdf/CV.pdf" download="michael njuguna CV"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-file-earmark-arrow-down-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"
+              />
+            </svg>
+            DOWNLOAD CV</a
+          >
+        </button>
+      </header>
+      <section class="about">
+        <h1 class="about-title">A bit About Me</h1>
+        <ul class="about-info">
+          <li>
+            I am passionate about my work. Because I love what I do, I have a
+            steady source of motivation that drives me to do my best.
+          </li>
+          <br />
+          <li>
+            I am results-oriented, constantly checking in with the goal to
+            determine how close or far away we are and what it will take to make
+            it happen.
+          </li>
+          <br />
+        </ul>
+        <div class="about-social">
+          <a href="https://www.instagram.com/mike_isgood/"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              />
+            </svg>
+          </a>
+          <a href="https://web.facebook.com/profile.php?id=100041279617129"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+      <!--light part of the website-->
+      <section class="light-part">
+        <!--what i do-->
+        <section class="skills">
+          <h1 class="skills-header">What I do?</h1>
+          <div class="skills-images">
+            <div class="skill-content">
+              <div class="skill-content__img">
+                <img
+                  src="images/WEB.jpg"
+                  alt="web development by michael njuguna"
+                />
+              </div>
+              <div class="skill-content__name">WEB DEVELOPMENT</div>
+            </div>
+            <div class="skill-content">
+              <div class="skill-content__img">
+                <img
+                  src="images/UX.jpg"
+                  alt="ui/ux design by michael njuguna"
+                />
+              </div>
+              <div class="skill-content__name">UI/UX DESIGN</div>
+            </div>
+            <div class="skill-content">
+              <div class="skill-content__img">
+                <img
+                  src="images/MOBILE.jpg"
+                  alt="mobile app development by michael"
+                  srcset=""
+                />
+              </div>
+              <div class="skill-content__name">MOBILE APP DEVELOPMENT</div>
+            </div>
+          </div>
+          <div class="skills-experience">
+            <div class="skills-experience__content">
+              <div class="skills-experience__number">4+</div>
+              <div class="skills-experience__text">Projects Completed.</div>
+            </div>
+            <div class="skills-experience__content">
+              <div class="skills-experience__number">4+</div>
+              <div class="skills-experience__text">Happy Customers.</div>
+            </div>
+            <div class="skills-experience__content">
+              <div class="skills-experience__number">1+</div>
+              <div class="skills-experience__text">Years of Experience.</div>
+            </div>
+          </div>
+        </section>
+        <!--Skills-->
+
+        <section class="portfolio">
+          <h1 class="portfolio-header">Portfolio</h1>
+          <div class="portfolio-container">
+            <div class="portfolio-items">
+              <div class="item-name">
+                <a href="https://web-development-by-michael.netlify.app/"
+                  >Portfolio V1</a
+                >
+              </div>
+              <div class="item-code">
+                <a
+                  href="https://github.com/michaelnjuguna/personal-portfolio-v1"
+                  >Code</a
+                >
+              </div>
+            </div>
+            <div class="portfolio-items">
+              <div class="item-name">
+                <a href="https://mike-njuguna.netlify.app/">Portfolio V2</a>
+              </div>
+              <div class="item-code">
+                <a
+                  href="https://github.com/michaelnjuguna/personal-portfolio-v2"
+                  >Code</a
+                >
+              </div>
+            </div>
+            <div class="portfolio-items">
+              <div class="item-name">
+                <a href="https://example-site-name.netlify.app/"
+                  >Portfolio Example</a
+                >
+              </div>
+              <div class="item-code">
+                <a href="https://github.com/michaelnjuguna/practice-portfolio"
+                  >Code</a
+                >
+              </div>
+            </div>
+            <div class="portfolio-items">
+              <div class="item-name">
+                <a href="https://peter-chege.netlify.app/#top-header"
+                  >Peter Chege</a
+                >
+              </div>
+              <div class="item-code">
+                <a
+                  href="https://github.com/michaelnjuguna/chege-personal-portfolio"
+                  >Code</a
+                >
+              </div>
+            </div>
+            <div class="portfolio-items">
+              <div class="item-name">
+                <a href="https://legit-movers-group.netlify.app/"
+                  >Legit Movers Limited</a
+                >
+              </div>
+              <div class="item-code">
+                <a href="https://github.com/michaelnjuguna/legit-movers"
+                  >Code</a
+                >
+              </div>
+            </div>
+            <div class="portfolio-items">
+              <div class="item-name">
+                <a href="http://">Portfolio v3</a>
+              </div>
+              <div class="item-code"><a href="http://">Code</a></div>
+            </div>
+            <div class="portfolio-items">
+              <div class="item-name">
+                <a href="https://vendingmachinemanufactures.netlify.app/"
+                  >Vendor Machine Manufactures</a
+                >
+              </div>
+            </div>
+
+            <div class="portfolio-items">
+              <div class="item-name youtube">
+                <a
+                  href="https://www.youtube.com/channel/UCrVQe-jlmfmkLrDuCzAhtnQ"
+                  >YouTube</a
+                >
+              </div>
+            </div>
+            <div class="portfolio-items">
+              <div class="item-name codepen">
+                <a href="https://codepen.io/michaelnjuguna" class="codepen"
+                  >CodePen</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Contact-->
+        <section class="contact">
+          <div class="contact-info">
+            <h1 class="contact-header">Just Say Hi!</h1>
+            <p class="contact-info__contact">
+              I'm always open to new opportunities. <br />
+              Feel free to send me a message or just
+              <a href="mailto:michaelnjuguna184@gmail.com">just say hi.</a>
+              <br />
+              I will be very grateful.
+            </p>
+            <ul class="contact-items">
+              <li>PHONE: <a href="tel:0796371360">0796371360</a></li>
+            </ul>
+            <h1 class="contact-header">Got your interest?</h1>
+            <button class="contact-btn">
+              <a href="mailto:michaelnjuguna184@gmail.com">Say Hi</a>
+            </button>
+          </div>
+        </section>
+      </section>
+      <footer class="footer">
+        <div class="footer-name">
+          MADE WITH <i class="fas fa-heart"></i> BY MICHAEL NJUGUNA
+        </div>
+        <div class="copyright">COPYRIGHT &#9400; 2021.NAIROBI,KENYA</div>
+      </footer>
+    </main>
+    <script src="javascript/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+//loader logo
+.loader-logo {
+    position: relative;
+    margin: 20vh auto 0;
+    animation-name: logo;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+
+    .logo-border {
+        width: 13rem;
+        height: 8rem;
+
+
+        .logo-border__inner {
+            stroke: $logoColor;
+            fill: transparent;
+            stroke-width: 6px;
+            stroke-linejoin: round;
+            animation-name: loaderLogo;
+            animation-duration: 3s;
+            animation-delay: .5s;
+            animation-timing-function: ease-out;
+        }
+    }
+
+    .logo-name {
+        font-size: 5rem;
+        font-family: $font;
+        font-weight: 700;
+        color: $logoColor;
+        transform: translateY(-7.5rem);
+        
+    }
+}
+
+
+//navigation bar logo
+
+.lg-nav__logo{
+    height: 7rem;
+    width: 15rem;
+    .lg-nav__logo-border{
+        width: 12rem;
+        height: 7rem;
+        .lg-nav__inner{
+            fill: transparent;
+            stroke: $logoColor;
+            stroke-width: 5px;
+            stroke-linejoin: round;
+        }
+    }
+    .lg-nav__logo-text{
+        font-family: $font;
+        font-size: 5rem;
+        color: $logoColor;
+        font-weight: 600;
+       transform: translate(3.8rem,-7.2rem);
+      
+    }
+
+}
+
+//mobile nav
+.sm-navbar__logo{
+    height: 7rem;
+    width: 15rem;
+   
+    .sm-navbar__logo-border{
+        width: 12rem;
+        height: 7rem;
+        .sm-navbar__logo-inner{
+            fill: transparent;
+            stroke: $logoColor;
+            stroke-width: 5px;
+            stroke-linejoin: round;
+        }
+    }
+    .sm-navbar__text{
+        font-family: $font;
+        font-size: 4rem;
+        color: $logoColor;
+        font-weight: 600;
+        transform: translate(4.2rem,-6.8rem);
+    }
+}

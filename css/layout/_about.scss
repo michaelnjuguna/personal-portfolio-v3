@@ -1,0 +1,47 @@
+.about {
+  width: 100vw;
+  min-height: 120vh;
+  background-attachment: fixed;
+  background: radial-gradient(circle at 80% 80%, #424242 30%, #000000 30%);
+  margin-top: 100vh;
+  padding: 0 10vw;
+  transform: translateY(-8rem);
+  border-bottom: solid 6px $logoColor;
+
+  @media (min-width: 924px) {
+    padding: 0 20vw;
+  }
+
+  .about-title {
+    @include header;
+    padding: 3rem 0 0 0;
+  }
+
+  .about-info {
+    font-size: 1.6rem;
+    color: $lightTextColor;
+    font-family: $font;
+    font-weight: 600;
+    list-style: lower-roman;
+    padding: 3rem 0 5rem 0;
+    @media (max-width: 320px) {
+      padding: 3rem 0 1rem 0;
+    }
+    li {
+      &::selection {
+        color: $logoColor;
+        background-color: white;
+      }
+    }
+  }
+  .about-social {
+    text-align: left;
+
+    a {
+      font-size: 4rem;
+      color: $logoColor;
+      padding: 0 2rem 0 0;
+      margin-bottom: 3rem;
+    }
+  }
+}

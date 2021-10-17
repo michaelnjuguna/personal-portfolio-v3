@@ -1,0 +1,202 @@
+.lg-navbar {
+    z-index: 10;
+    position: sticky;
+    height: 8rem;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.575);
+    padding: .5rem 10vw;
+    display: flex;
+    align-items: center;
+
+    @media (max-width:940px) {
+        display: none;
+    }
+
+    .lg-nav__contact {
+        margin: 0 auto;
+        display: inline-block;
+
+        .lg-nav__contact-items {
+            list-style: none;
+
+            .lg-nav__contact-item {
+                display: inline-block;
+                padding: .8rem;
+                border: solid 5px $logoColor;
+                margin: 0 1rem;
+                border-radius: $borderRadius;
+                transform: $skew;
+                transition-property: all;
+                transition-duration: 1s;
+                transition-timing-function: ease-out;
+                transition-delay: 0s;
+
+                &:hover {
+                    background-color: $logoColor;
+                    cursor: pointer;
+                    border: solid 5px transparent;
+
+                    .lg-nav__contact-link {
+                        color: $lightTextColor;
+                    }
+                }
+
+                .lg-nav__contact-link {
+                    font-family: $font;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    color: $logoColor;
+                    font-weight: 600;
+                    letter-spacing: $textSpacing;
+
+                }
+
+            }
+        }
+    }
+
+    .lg-nav__links {
+        .lg-nav__links-items {
+            list-style: none;
+
+            .lg-nav__links-item {
+                display: inline-block;
+                padding: 0 1rem;
+                cursor: pointer;
+                transition-property: all;
+                transition-duration: .5s;
+                transition-timing-function: ease-out;
+                transition-delay: 0s;
+
+                &:hover {
+                    border-bottom: solid 5px $logoColor;
+                    border-radius: $borderRadius;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-family: $font;
+                    font-size: 1.6rem;
+                    color: $lightTextColor;
+                    font-weight: 600;
+                    letter-spacing: $textSpacing;
+
+                }
+            }
+        }
+    }
+
+}
+
+.sm-navbar {
+    z-index: 10;
+    position: sticky;
+    height: 7rem;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.575);
+    padding: .5rem 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width:940px) {
+        display: none;
+    }
+
+    //hambuger
+    .hambuger {
+        width: 4rem;
+        display: inline-block;
+        z-index: 10;
+
+        .hambuger-stick {
+            border-bottom: 5px solid $logoColor;
+            border-radius: $borderRadius;
+
+        }
+
+        .hambuger-stick__one {
+            margin-bottom: 1rem;
+
+        }
+
+        .hambuger-stick__two {
+            width: 2.5rem;
+            margin: 0 0 0 1.5rem;
+        }
+    }
+
+}
+
+//mobile list items
+.mobile-list__items {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 80% 80%, #424242 30%, #000000 30%);
+    text-align: center;
+
+    @media (min-width:940px) {
+        display: none;
+    }
+
+    .mobile-list__contact {
+        list-style: none;
+
+        .mobile-list__contact-item {
+            display: block;
+            border: solid 5px $logoColor;
+            padding: 1rem 3rem;
+            margin: 1rem 0;
+            transform: $skew;
+
+            &:hover {
+                background-color: $logoColor;
+                cursor: pointer;
+                border: solid 5px transparent;
+
+                a {
+                    color: $lightTextColor;
+                }
+            }
+
+            a {
+                font-size: 1.6rem;
+                text-decoration: none;
+                font-weight: 600;
+                color: $logoColor;
+                font-family: $font;
+                letter-spacing: $textSpacing;
+            }
+        }
+    }
+
+    .mobile-list__links {
+        display: block;
+        list-style: none;
+
+        .mobile-list__link {
+            display: block;
+            &:hover{
+                border-bottom: solid 5px $logoColor;
+                border-radius: $borderRadius;
+            }
+
+            a {
+                font-size: 1.8rem;
+                text-decoration: none;
+                font-weight: 600;
+                color: $lightTextColor;
+                font-family: $font;
+                letter-spacing: $textSpacing;
+            }
+        }
+    }
+}
