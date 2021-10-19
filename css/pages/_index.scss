@@ -16,6 +16,11 @@ body {
     transition-timing-function: ease-out;
     animation: cursorAnim 0.5s infinite alternate;
   }
+  @media (max-width: 768px) {
+    .custom-cursor {
+      display: none;
+    }
+  }
 
   .custom-cursor::after {
     content: "";

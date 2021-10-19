@@ -34,6 +34,28 @@
       }
     }
   }
+  //skills
+  .about-skills {
+    h2 {
+      color: $logoColor;
+      font-family: $font;
+      font-size: 2rem;
+      font-weight: 500;
+      @include select;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: circle;
+      li {
+        font-family: $font;
+        font-weight: 400;
+        font-size: 1.6rem;
+        @include select;
+        color: $lightTextColor;
+      }
+    }
+  }
   .about-social {
     text-align: left;
 

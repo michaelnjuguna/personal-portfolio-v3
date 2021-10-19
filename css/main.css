@@ -389,6 +389,51 @@ body {
   background-color: white;
 }
 
+.about .about-skills h2 {
+  color: #311b92;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.about .about-skills h2::-moz-selection {
+  color: #311b92;
+  background-color: white;
+}
+
+.about .about-skills h2::selection {
+  color: #311b92;
+  background-color: white;
+}
+
+.about .about-skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: circle;
+}
+
+.about .about-skills ul li {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.521);
+}
+
+.about .about-skills ul li::-moz-selection {
+  color: #311b92;
+  background-color: white;
+}
+
+.about .about-skills ul li::selection {
+  color: #311b92;
+  background-color: white;
+}
+
 .about .about-social {
   text-align: left;
 }
@@ -595,7 +640,7 @@ body {
   font-size: 4rem;
   font-family: "Lato", sans-serif;
   text-align: center;
-  color: rgba(255, 255, 255, 0.521);
+  color: #311b92;
   letter-spacing: 0.5rem;
   background-clip: text;
   font-weight: 900;
@@ -1289,6 +1334,12 @@ body .custom-cursor {
           transition-timing-function: ease-out;
   -webkit-animation: cursorAnim 0.5s infinite alternate;
           animation: cursorAnim 0.5s infinite alternate;
+}
+
+@media (max-width: 768px) {
+  body .custom-cursor {
+    display: none;
+  }
 }
 
 body .custom-cursor::after {
