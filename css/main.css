@@ -611,7 +611,7 @@ body {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background: url(../images/img-1.jpg);
+  background: url(../images/img-1.png);
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
@@ -1285,6 +1285,7 @@ body {
   z-index: 20;
   text-align: center;
   padding: 0 5vw;
+  display: none;
 }
 
 .loader .loader-bar {
@@ -1312,6 +1313,16 @@ body {
   font-family: "Lato", sans-serif;
   color: rgba(255, 255, 255, 0.521);
   font-weight: 800;
+}
+
+.loader-text::-moz-selection {
+  color: #311b92;
+  background-color: white;
+}
+
+.loader-text::selection {
+  color: #311b92;
+  background-color: white;
 }
 
 body {
@@ -1359,7 +1370,6 @@ body .main {
   width: 100vw;
   height: 100%;
   position: relative;
-  display: none;
 }
 
 body .main .light-part {
