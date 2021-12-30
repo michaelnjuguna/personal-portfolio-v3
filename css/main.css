@@ -1279,7 +1279,7 @@ body {
   background: radial-gradient(circle at 80% 80%, #424242 30%, #000000 30%);
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   bottom: 0 rem;
   top: 0 rem;
   z-index: 20;
@@ -1348,7 +1348,10 @@ body .custom-cursor {
 
 @media (max-width: 768px) {
   body .custom-cursor {
-    display: none;
+    display: none !important;
+  }
+  body .custom-cursor::after {
+    display: none !important;
   }
 }
 
@@ -1389,16 +1392,16 @@ body .main .light-part {
 }
 
 body::-webkit-scrollbar {
-  width: 1.8rem;
+  width: 1.5rem;
   height: 0;
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #311b92;
+  background-color: #000000;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #07021f;
+  background-color: #311b92;
   border-radius: 100vw;
   border: 3px solid #311b92;
   height: 0;

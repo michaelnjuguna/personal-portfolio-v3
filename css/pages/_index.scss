@@ -18,7 +18,10 @@ body {
   }
   @media (max-width: 768px) {
     .custom-cursor {
-      display: none;
+      display: none !important;
+    }
+    .custom-cursor::after {
+      display: none !important;
     }
   }
 
@@ -59,16 +62,16 @@ body {
 
 //scrollbar
 body::-webkit-scrollbar {
-  width: 1.8rem;
+  width: 1.5rem;
   height: 0;
 }
 
 body::-webkit-scrollbar-track {
-  background-color: $logoColor;
+  background-color: #000000;
   // border-radius: 100vw;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #07021f;
+  background-color: $logoColor;
   border-radius: 100vw;
   border: 3px solid $logoColor;
   height: 0;
